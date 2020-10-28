@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>이미지 슬라이더</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="slider">
+      <div class="images">
+        <img
+          class="image active"
+          src="http://placehold.it/460x300?text=image_0"
+        />
+        <img class="image" src="http://placehold.it/460x300?text=image_1" />
+        <img class="image" src="http://placehold.it/460x300?text=image_2" />
+        <img class="image" src="http://placehold.it/460x300?text=image_3" />
+        <div class="image">
+          <h1>이미지가 아닌 것</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="sidebtn">
+        <div class="leftbtn">
+          <i class="fas fa-caret-left"></i>
+        </div>
+        <div class="rightbtn">
+          <i class="fas fa-caret-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-list"></div>
+    <script src="jquery-3.1.0.js"></script>
+    <script src="index.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+/* normalize */
+h1 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* slider */
+.slider {
+  width: 460px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider:hover div {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+/* images */
+.images {
+  position: absolute;
+}
+
+.image {
+  width: 460px;
+  height: 300px;
+  float: left;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* side btn */
+.sidebtn {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.sidebtn div {
+  padding: 15px;
+  position: absolute;
+  color: grey;
+  font-size: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.sidebtn div:active {
+  transition: transform 0.2s;
+  transform: translateY(-40%);
+}
+
+.sidebtn .leftbtn {
+  left: 0;
+}
+
+.sidebtn .rightbtn {
+  right: 0;
+}
+
+/* image-list */
+
+.image-list {
+  display: flex;
+  width: 460px;
+}
+
+.image-list .image {
+  box-sizing: border-box;
+  display: block;
+  padding: 5px;
+  height: 100px;
+  font-size: 10px;
+}
+
+.image-list .image.active {
+  border: 2px solid red;
+  padding: 0px;
+}
